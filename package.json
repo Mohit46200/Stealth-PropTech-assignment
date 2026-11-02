@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "concurrently -n api,web -c blue,magenta \"pnpm --filter bill-splitter-api dev\" \"pnpm --filter bill-splitter-web dev\"",
     "build": "pnpm --filter bill-splitter-web build",
+    "deploy": "pnpm --filter bill-splitter-api run deploy",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm --filter bill-splitter-api test",
     "check": "biome check .",
